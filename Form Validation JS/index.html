@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="notification" class="notification-modal">
+        <span class="close">&times;</span>
+        <p>Form submitted successfully!</p>
+    </div>
+
+    <div class="container">
+        <!--Form-->
+        <div class="container">
+            <form id="form" action="/" method="POST">
+
+                <!--Form fields-->
+                <h1>Contact Form</h1>
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error">Username is required</div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text">
+                    <div class="error">Email is required</div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password">
+                    <div class="error">Password is required</div>
+                </div>
+                <div class="input-control">
+                    <label for="password2">Retype Password</label>
+                    <input id="password2" name="password2" type="password">
+                    <div class="error">Password is wrong</div>
+                </div>
+                <!--Button-->
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
